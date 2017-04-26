@@ -1,6 +1,6 @@
 # npmtest-react-portal
 
-#### test coverage for  [react-portal (v3.0.0)](https://github.com/tajo/react-portal#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-react-portal.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-react-portal) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-react-portal.svg)](https://travis-ci.org/npmtest/node-npmtest-react-portal)
+#### basic test coverage for  [react-portal (v3.1.0)](https://github.com/tajo/react-portal#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-react-portal.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-react-portal) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-react-portal.svg)](https://travis-ci.org/npmtest/node-npmtest-react-portal)
 
 #### React component for transportation of modals, lightboxes, loading bars... to document.body
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-react-portal/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-react-portal/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-react-portal/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-react-portal/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-react-portal/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-react-portal/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-react-portal/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-react-portal/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-react-portal/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-react-portal/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-react-portal/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-react-portal/build/coverage.html/index.html)
 
@@ -41,7 +41,9 @@
     "bugs": {
         "url": "https://github.com/tajo/react-portal/issues"
     },
-    "dependencies": {},
+    "dependencies": {
+        "prop-types": "^15.5.8"
+    },
     "description": "React component for transportation of modals, lightboxes, loading bars... to document.body",
     "devDependencies": {
         "babel-cli": "^6.8.0",
@@ -76,8 +78,8 @@
     },
     "directories": {},
     "dist": {
-        "shasum": "9304fce836e8a3216b22588f8dc91b447728f0ae",
-        "tarball": "https://registry.npmjs.org/react-portal/-/react-portal-3.0.0.tgz"
+        "shasum": "865c44fb72a1da106c649206936559ce891ee899",
+        "tarball": "https://registry.npmjs.org/react-portal/-/react-portal-3.1.0.tgz"
     },
     "files": [
         "*.md",
@@ -85,7 +87,7 @@
         "lib",
         "build"
     ],
-    "gitHead": "dee11f89fb180b9bffaa92ca312a033bcc88b254",
+    "gitHead": "5ebaf66ae5127abaa0fdcf8a36b9db5b5c22356b",
     "homepage": "https://github.com/tajo/react-portal#readme",
     "keywords": [
         "react",
@@ -122,7 +124,8 @@
     "tags": [
         "react"
     ],
-    "version": "3.0.0"
+    "version": "3.1.0",
+    "bin": {}
 }
 ```
 
