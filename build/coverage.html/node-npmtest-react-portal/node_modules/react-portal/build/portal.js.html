@@ -197,16 +197,16 @@
     <h1>Code coverage report for <span class="entity">node-npmtest-react-portal/node_modules/react-portal/build/portal.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">8.33% <small>(10 / 120)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">8.2% <small>(10 / 122)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">0% <small>(0 / 90)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">0% <small>(0 / 92)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
         Functions: <span class="metric">4.35% <small>(1 / 23)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">8.42% <small>(8 / 95)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">8.25% <small>(8 / 97)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
@@ -433,7 +433,11 @@
 217
 218
 219
-220</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+220
+221
+222
+223
+224</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -442,6 +446,10 @@
 <span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -668,6 +676,10 @@ var _react = require('react');
 &nbsp;
 <span class="cstat-no" title="statement not covered" >var _reactDom2 = _interopRequireDefault(_reactDom);</span>
 &nbsp;
+<span class="cstat-no" title="statement not covered" >var _propTypes = require('prop-types');</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >var _propTypes2 = _interopRequireDefault(_propTypes);</span>
+&nbsp;
 <span class="fstat-no" title="function not covered" >function _interopRequireDefault(obj) {</span> <span class="cstat-no" title="statement not covered" >return obj &amp;&amp; obj.__esModule ? obj : { default: obj }; </span>}
 &nbsp;
 <span class="fstat-no" title="function not covered" >function _classCallCheck(instance, Constructor) {</span> <span class="cstat-no" title="statement not covered" >if (!(instance instanceof Constructor)) { <span class="cstat-no" title="statement not covered" >throw new TypeError("Cannot call a class as a function"); </span>} </span>}
@@ -686,7 +698,7 @@ var _react = require('react');
 <span class="fstat-no" title="function not covered" >  function Portal() {</span>
 <span class="cstat-no" title="statement not covered" >    _classCallCheck(this, Portal);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Portal).call(this));</span>
+<span class="cstat-no" title="statement not covered" >    var _this = _possibleConstructorReturn(this, (Portal.__proto__ || Object.getPrototypeOf(Portal)).call(this));</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    _this.state = { active: false };</span>
 <span class="cstat-no" title="statement not covered" >    _this.handleWrapperClick = _this.handleWrapperClick.bind(_this);</span>
@@ -763,7 +775,7 @@ var _react = require('react');
   }, {
     key: 'openPortal',
     value: <span class="fstat-no" title="function not covered" >function openPortal() {</span>
-<span class="cstat-no" title="statement not covered" >      var props = arguments.length &lt;= 0 || arguments[0] === undefined ? this.props : arguments[0];</span>
+<span class="cstat-no" title="statement not covered" >      var props = arguments.length &gt; 0 &amp;&amp; arguments[0] !== undefined ? arguments[0] : this.props;</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >      this.setState({ active: true });</span>
 <span class="cstat-no" title="statement not covered" >      this.renderPortal(props);</span>
@@ -774,7 +786,7 @@ var _react = require('react');
     value: <span class="fstat-no" title="function not covered" >function closePortal() {</span>
 <span class="cstat-no" title="statement not covered" >      var _this2 = this;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      var isUnmounted = arguments.length &lt;= 0 || arguments[0] === undefined ? false : arguments[0];</span>
+<span class="cstat-no" title="statement not covered" >      var isUnmounted = arguments.length &gt; 0 &amp;&amp; arguments[0] !== undefined ? arguments[0] : false;</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >      var resetPortalState = <span class="fstat-no" title="function not covered" >function resetPortalState() {</span></span>
 <span class="cstat-no" title="statement not covered" >        if (_this2.node) {</span>
@@ -853,15 +865,15 @@ var _react = require('react');
 &nbsp;
 &nbsp;
 <span class="cstat-no" title="statement not covered" >Portal.propTypes = {</span>
-  children: _react2.default.PropTypes.element.isRequired,
-  openByClickOn: _react2.default.PropTypes.element,
-  closeOnEsc: _react2.default.PropTypes.bool,
-  closeOnOutsideClick: _react2.default.PropTypes.bool,
-  isOpened: _react2.default.PropTypes.bool,
-  onOpen: _react2.default.PropTypes.func,
-  onClose: _react2.default.PropTypes.func,
-  beforeClose: _react2.default.PropTypes.func,
-  onUpdate: _react2.default.PropTypes.func
+  children: _propTypes2.default.element.isRequired,
+  openByClickOn: _propTypes2.default.element,
+  closeOnEsc: _propTypes2.default.bool,
+  closeOnOutsideClick: _propTypes2.default.bool,
+  isOpened: _propTypes2.default.bool,
+  onOpen: _propTypes2.default.func,
+  onClose: _propTypes2.default.func,
+  beforeClose: _propTypes2.default.func,
+  onUpdate: _propTypes2.default.func
 };
 &nbsp;
 <span class="cstat-no" title="statement not covered" >Portal.defaultProps = {</span>
@@ -875,7 +887,7 @@ var _react = require('react');
 </table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Wed Apr 19 2017 00:04:07 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Wed Apr 26 2017 03:32:36 GMT+0000 (UTC)</div>
 </div>
 </body>
 </html>
